@@ -1,13 +1,15 @@
 import styled from 'styled-components'
-import 'tailwindcss/tailwind.css'
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.color.background};
 `
+const Title = styled.h1`
+  color: ${({ theme }) => theme.color.primary};
+`
 
-export const Home = (): JSX.Element => (
+export const Home = () => (
   <Container>
-    <h1 className="m-1">Test</h1>
+    <Title className="m-1">Test</Title>
   </Container>
 )
 

@@ -18,11 +18,6 @@ const defaultTheme = {
   mq: '(min-width: 500px)',
 }
 
-const lightTheme = { ...defaultTheme, ...light }
+export const lightTheme = { ...defaultTheme, ...light }
 export type Theme = typeof lightTheme
-const darkTheme: Theme = { ...defaultTheme, ...dark }
-
-export const themes = {
-  light: lightTheme,
-  dark: darkTheme,
-} as const
+export const darkTheme: Theme = { ...defaultTheme, ...dark }

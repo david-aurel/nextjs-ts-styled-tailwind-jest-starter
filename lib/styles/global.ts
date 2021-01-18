@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Roboto", sans-serif;
     background-color: ${({ theme }) => theme.color.background};
-    color: ${({ theme }) => theme.color.primary};
+    color: ${({ theme }) => theme.color.background};
   }
 `
 
